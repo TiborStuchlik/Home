@@ -1,9 +1,7 @@
-#require '/utils/init'
+require './utils/init'
 require 'action_cable_client'
+require 'sqlite3'
 
-puts __dir__
-puts File.dirname(__dir__)
-puts File.expand_path(File.dirname(__dir__))
 
 EventMachine.run do
 
