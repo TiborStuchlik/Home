@@ -1,0 +1,8 @@
+/.project
+/.idea
+/log/*
+/tmp/*
+/.bundle
+/Gemfile.lock
+/Gemfile.local
+
