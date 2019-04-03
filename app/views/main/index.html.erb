@@ -1,21 +1,6 @@
-<div style="font-family: verdana; margin: 0; padding: 5px">
-  <table border="1">
-    <tr>
-      <td>Application</td>
-      <td>TYB HomeIOT v. 1.0</td>
-    </tr>
-    <tr>
-      <td>Cpu</td>
-      <td><%= @os.cpu %></td>
-    </tr>
-  <tr>
-    <td>Os</td>
-    <td><%= @os.os %></td>
-  </tr>
-    <tr>
-      <td>Cpu temp</td>
-      <td><%= @temp.to_s %></td>
-    </tr>
-  </table>
+<div class="container-fluid">
+
+  <%= render partial: "system_info" %>
+  <%= render partial: "hubs" %>
 
 </div>

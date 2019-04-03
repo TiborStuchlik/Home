@@ -1,0 +1,31 @@
+<h4>SYSTEM INFO</h4>
+<table class="table table-light table-striped table-hover table-bordered" >
+  <thead class="thead-dark">
+  <tr class="active">
+    <th>NAME</th>
+    <th>VALUE</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr class="active">
+    <td>Application</td>
+    <td>TYB HomeIOT v. 1.0</td>
+  </tr>
+  <tr>
+    <td>Cpu</td>
+    <td><%= @os.cpu %></td>
+  </tr>
+  <tr>
+    <td>Os</td>
+    <td><%= @os.os %></td>
+  </tr>
+  <tr>
+    <td>Cpu temp</td>
+    <td><%= @temp.to_s %></td>
+  </tr>
+  <tr >
+    <td>Server message</td>
+    <td id="server_message">-</td>
+  </tr>
+  </tbody>
+</table>
