@@ -9,6 +9,7 @@ gem 'rails', '~> 5.2.3'
 gem 'sqlite3'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
+#gem "passenger", require: "phusion_passenger/rack_handler"
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -17,6 +18,7 @@ gem 'sass-rails', '~> 5.0'
 # gem 'mini_racer', platforms: :ruby
 
 gem 'devise'
+gem 'redis'
 
 # Use CoffeeScript for .coffee assets and views
 # gem 'coffee-rails', '~> 4.2'
@@ -51,7 +53,9 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   #gem 'ruby-debug-ide', '0.4.24'
-  #gem 'debase', '0.2.1'
+  gem 'debase' #, '0.2.1'
+  #gem "debase-internals"
+   gem 'rack-mini-profiler'
 end
 
 group :test do

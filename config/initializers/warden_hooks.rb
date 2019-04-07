@@ -1,0 +1,5 @@
+Warden::Manager.after_set_user do |user,auth,opts|
+  #puts "init waden hooks"
+  scope = opts[:scope]
+  auth.cookies.signed["#{scope}_id"] = user.id
+end

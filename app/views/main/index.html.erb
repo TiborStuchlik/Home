@@ -1,5 +1,6 @@
 <div class="container-fluid">
-
+  <div><%= @redis %></div>
+  <button class="btn btn-primary" onclick="testNotify()">Notify me!</button>
   <%= render partial: "system_info" %>
   <%= render partial: "hubs" %>
 

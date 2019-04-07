@@ -1,9 +1,8 @@
 <div class="container">
-  <h2>Log in form</h2>
+  <h2><i class="fas fa-sign-in-alt"></i> Log in form</h2>
 
   <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
 
-    <form>
       <div class="input-group mb-3">
         <div class="input-group-prepend">
           <span class="input-group-text"><%= f.label :email, style: "margin: 0" %></span>
@@ -26,7 +25,7 @@
     <% end %>
 
     <div class="actions">
-      <%= f.submit "Log in", class: "btn btn-primary" %>
+      <%= f.button'<i class="fas fa-sign-in-alt"></i> Log in'.html_safe, class: "btn btn-primary", id: "log-in" %>
     </div>
   <% end %>
 
