@@ -19,6 +19,7 @@ gem 'sass-rails', '~> 5.0'
 
 gem 'devise'
 gem 'redis'
+gem 'rails-reverse-proxy'
 
 # Use CoffeeScript for .coffee assets and views
 # gem 'coffee-rails', '~> 4.2'
