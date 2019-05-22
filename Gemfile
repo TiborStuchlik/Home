@@ -55,8 +55,8 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
   #gem 'ruby-debug-ide', '0.4.24'
   gem 'debase' #, '0.2.1'
-  #gem "debase-internals"
-   gem 'rack-mini-profiler'
+  # gem "debase-internals"
+  # gem 'rack-mini-profiler'
 end
 
 group :test do
