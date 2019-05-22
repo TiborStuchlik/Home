@@ -5,7 +5,11 @@ class Users::RegistrationsController < Devise::RegistrationsController
   layout 'anonymous', only: [:new]
 
   def new
-    super
+    if current_user
+      super
+    else
+      render :pre_registration
+    end
   end
 
   def create
