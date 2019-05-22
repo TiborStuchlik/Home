@@ -35,7 +35,7 @@ class Users::SessionsController < Devise::SessionsController
      #cookies.signed[:last_app_request_at] = user_session["last_request_at"]
      cookies.signed[:channel_identifier] = SecureRandom.uuid
      #session[:last_app_request_at] = user_session["last_request_at"]
-     puts "session vytvorena >>>>>> " + user_session["last_request_at"].to_s
+     #puts "session vytvorena >>>>>> " + user_session["last_request_at"].to_s
    end
 
   # DELETE /resource/sign_out
